@@ -1,4 +1,3 @@
-raise NotImplementedError('This package is not ready to be used. This version exists on PyPI as a placeholder.')
 
 class RUDSDescriptor:
     """
