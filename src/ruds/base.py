@@ -1,4 +1,3 @@
-
 class RUDSDescriptor:
     """
     RUDS (Randomly Updated Data Structure) Descriptor.
@@ -32,6 +31,7 @@ class RUDSDescriptor:
         """
         return self.method(instance)
 
+
 class RUDSMeta(type):
     """
     Metaclass for RUDS (Randomly Updated Data Structure).
@@ -60,6 +60,7 @@ class RUDSMeta(type):
             if callable(attr_value):
                 attrs[attr_name] = RUDSDescriptor(attr_value)
         return super(RUDSMeta, cls).__new__(cls, name, bases, attrs)
+
 
 class RUDSObject(metaclass=RUDSMeta):
     """

@@ -1,5 +1,6 @@
 import random
 
+
 class HistogramDistribution:
     """
     Custom distribution class for RUDSObject.
